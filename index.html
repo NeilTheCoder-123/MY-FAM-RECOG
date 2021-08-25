@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>MY-FAM RECOG</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:900'><link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Advent+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kenia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<script>const ID='4NZc0oVdy7w'</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+</head>
+<body>
+<center>
+<div class="button" style="margin-bottom: 1000px !important;">
+  <p>MY-FAM RECOG</p>
+</div>
+
+<h1 style="color: #fff800;">E</h1>
+<div style="margin-top: 110px; font-family: 'Black Ops One', cursive; color: blueviolet; font-size: xx-large;">MY-FAM RECOG is trained to identify my family.</div>
+<label style="font-family: 'Lobster', cursive; font-size: xx-large;">Live Webcam View - </label>
+      <div id="camera"></div>
+      <br><br>
+      <div id="result"></div>
+      <br><br>
+<button style="margin-top: 150px;" onclick="take_selfie();"><span aria-hidden="true"></span><span aria-hidden="true"></span><span>Capture Img</span></button>
+<button><span aria-hidden="true" onclick="check();"></span><span aria-hidden="true"></span><span>Identify Img</span></button>
+
+      <p style="font-size: xx-large; color: yellow; font-family: 'Lobster', cursive;">Result :  <span id="result_object"></span></p>
+      <p style="font-size: xx-large; color: yellow; font-family: 'Lobster', cursive;">Accuracy :  <span id="result_accuracy"></span></p>      
+</center>
+
+  <script  src="./main.js"></script>
+
+</body>
+</html>
+
+
