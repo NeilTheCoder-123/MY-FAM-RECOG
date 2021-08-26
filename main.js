@@ -15,9 +15,11 @@ Webcam.attach("#camera");
 function take_selfie(){
     Webcam.snap(function(data_uri){
         document.getElementById("result").innerHTML = '<img id="snapped_img" src="'+data_uri+'"/>';
+        
     }
     )
 };
+var snapped_image = document.getElementById("snapped_img");
 
 console.log('You are having ', ml5.version, ' version of machine learning.');
 
@@ -27,7 +29,8 @@ classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models
  };
 
 function check(){
-    img = document.getElementById('snapped_image');
+    img = document.getElementById('snapped_img');
+    console.log(img);
     classifier.classify(img, gotResult);
     console.log("Helloe");
 }
